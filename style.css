@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html { 
+	width: 100%;
+	height: 100%;
+	background: url(splash.jpg) no-repeat 50% 50%;
+	background-size: 100% 100%; 
+}
+#panelCanvas { 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -190px;
+	margin-top: -200px; 
+}
+#clockCanvas { 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -190px;
+	margin-top: -200px; 
+}
+#alarmCanvas {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+}
+#tickCanvas {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+}
+#controllBtn { 
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -24px;
+	margin-top: -130px; 
+}
