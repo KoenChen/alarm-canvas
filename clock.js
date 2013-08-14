@@ -12,7 +12,7 @@ function Clock() {
 	this.tickCtx = this.tickCanvas.getContext('2d');
 	
 	this.controllBtn = document.getElementById('controllBtn');
-	this.audio = new Audio('tick.mp3');
+	this.audio = new Audio('resources/tick.mp3');
 	this.audio.loop = true;
 
 	this.clockCtx.fillStyle = "rgba(39, 46, 56, 0.8)";
@@ -117,18 +117,18 @@ function Clock() {
 	this.alarmCache = '';
 
 	this.panelImg = new Image();
-	this.panelImg.src = 'panel.png';
+	this.panelImg.src = 'resources/panel.png';
 	this.controllImg = new Image();
 	this.minusImg = new Image();
-	this.minusImg.src = 'minus.png';
+	this.minusImg.src = 'resources/minus.png';
 	this.plusImg = new Image();
-	this.plusImg.src = 'plus.png';
+	this.plusImg.src = 'resources/plus.png';
 	this.closeImg = new Image();
-	this.closeImg.src = 'close.png';
+	this.closeImg.src = 'resources/close.png';
 	this.arrowImg = new Image();
-	this.arrowImg.src = 'arrow.png';
+	this.arrowImg.src = 'resources/arrow.png';
 	this.tickImg = new Image();
-	this.tickImg.src = 'tick.png';
+	this.tickImg.src = 'resources/tick.png';
 
 	this.init();
 }
@@ -401,7 +401,7 @@ Clock.prototype = {
 	},
 
 	drawControllBtn: function(btn){
-		this.controllImg.src = btn + '.png';
+		this.controllImg.src = 'resources/' + btn + '.png';
 		this.controllImg.onload = function(){
 			this.panelCtx.save();
 			this.panelCtx.rect(168, 122, 48, 48);
